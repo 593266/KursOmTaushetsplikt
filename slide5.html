@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anonymisering av taushetsbelagte opplysninger</title>
+  <link rel="stylesheet" href="css/multiplechoice.css" type="text/css">
+  <link rel="stylesheet" href="css/progress-container.css" type="text/css">
+  <link href="css/slides.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+  <div class="main-container">
+    <div class="main-container-ex-nextpagebuttons">
+
+      <!-- Everything related to the header of the site-->
+      <div class="header">
+        <img alt="BergenkommuneLogo" src="images\bergenLogo.png" class="bergenkommunenavbar" />
+        <div class="navbarButtons">
+          <div class="HomeButton">
+            <a href="forside.html" class="text_menyButton">
+              <div>Hjem</div>
+            </a>
+          </div>
+          <div class="ContactButton">
+            <span class="text_menyButton"><span>Kontakt</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progresscontainer styled in css/progress-container.css and script in js/progress-container.js -->
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active" data-title="Taushetsbelagte opplysninger" id="slide1">1</div>
+        <div class="circle" data-title="Deling av taushetsbelagte opplysninger" id="slide2">2</div>
+        <div class="circle" data-title="Deling av taushetsbelagte opplysninger 2" id="slide3">3</div>
+        <div class="circle" data-title="Samtykke" id="slide4">4</div>
+        <div class="circle" data-title="Anonymisering av taushetsbelagte opplysninger" id="slide5">5</div>
+        <div class="circle" data-title="Opplysningsrett" id="slide6">6</div>
+      </div>
+
+      <!-- Image container -->
+      <img alt="page6Image" src="images/page6.jpeg" class="picture" fetchpriority="high" />
+      <span class="caption">Kilde: "Tatiana - stock.adobe.com."</span>
+
+
+      <span class="text_overskrift">
+        <span>Anonymisering av taushetsbelagte opplysninger</span>
+      </span>
+
+      <!-- Information box-->
+      <div class="slides-tematekst">
+        <p>
+          Taushetsplikten tillater videreformidling av opplysninger når behovet for
+          beskyttelse er tilfredsstillende ivaretatt ved å fjerne individualiserende kjennetegn
+          og gjøre opplysningene anonyme.
+          Det er viktig å vurdere om opplysningene fortsatt kan identifisere enkeltpersoner.
+          <br><br>
+          Avgjørende er om opplysningene inneholder tilknytningspunkter som samlet sett er
+          tilstrekkelig for å identifisere enkeltpersoner, for eksempel kommunenavn, kjønn, alder eller diagnose.
+          Selv om navn, fødselsnummer og andre personlige kjennetegn er fjernet og opplysningene
+          ikke kan knyttes til en bestemt person, kan andre opplysninger som utdanning, yrke eller
+          bosted likevel identifisere personen og gjøre opplysningene ikke-anonyme.
+          <br><br>
+          For at kravet til anonymitet skal være oppfylt, må identifisering ikke være mulig,
+          verken direkte eller indirekte. Det anses generelt at opplysninger er anonymiserte når
+          de kan knyttes til fire-fem personer eller flere.
+        </p>
+      </div>
+
+      <!--Creates frame around the question-->
+      <div class="frame">
+        <!-- Question-->
+        <h1 class="question-header">
+          Hvordan kan man sikre at opplysningene er tilstrekkelig
+          anonymisert og ikke kan spores tilbake til enkeltpersoner?
+        </h1>
+
+
+        <!-- Answer option -->
+        <form>
+          <input type="radio" name="radioButton" id="item1">
+          <label for="item1"> Ved å fjerne kjennetegn som navn, alder, diagnose også
+            lignende.
+            <br></label><br>
+          <input type="radio" name="radioButton" id="item2">
+          <label for="item2"> Anonymiseringen må være såpass grundig at det anonymiserte
+            innholdet kan knyttes til flere enn fire-fem personer.
+            <br></label><br>
+        </form>
+        <!-- Button to check answer -->
+        <button class="sjekksvarButton" id="sjekksvar1" type="button">Sjekk svar</button>
+
+        <!-- right or wrong answer message -->
+        <div id="responsMessage1" class="riHide"></div>
+      </div>
+
+      <div class="frame">
+        <!-- Overskrift eller spm -->
+        <h1 class="question-header">
+          En har lov å snakke om en tjenestemottaker med venner og familie
+          hvis en har anonymisert informasjonen.
+        </h1>
+
+        <body>
+          <!-- Svar alternativ knappene -->
+          <form>
+            <input type="radio" name="radioButton" id="item3">
+            <label for="item3"> Sant.
+              <br></label><br>
+            <input type="radio" name="radioButton" id="item4">
+            <label for="item4"> Usant.
+              <br></label><br>
+          </form>
+          <!-- Knapp for å sjekke svar -->
+          <button class="sjekksvarButton" id="sjekksvar2" type="button">Sjekk svar</button>
+
+          <!-- Riktig svar melding og feil svar melding -->
+          <div id="responsMessage2" class="riHide"></div>
+        </body>
+      </div>
+
+
+
+    </div>
+
+    <!-- Buttons for next or previous page-->
+    <div class="buttonContainer">
+      <a href="slide4.html" class="temaogspm1-navlink1">
+
+        <button class="btn" id="prev">Forrige</button>
+      </a>
+      <a href="slide6.html" class="temaogspm1-navlink">
+        <button class="btn" id="next" disabled>Neste</button>
+      </a>
+    </div>
+  </div>
+  <script src="js/progress-container.js" defer></script>
+  <script src="js/slide5.js" defer></script>
+</body>
+
+</html>

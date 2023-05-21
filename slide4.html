@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samtykke</title>
+  <link rel="stylesheet" href="css/multiplechoice.css" type="text/css">
+  <link rel="stylesheet" href="css/progress-container.css" type="text/css">
+  <link href="css/slides.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="main-container">
+    <div class="main-container-ex-nextpagebuttons">
+
+      <!-- Everything related to the header of the site-->
+      <div class="header">
+        <img alt="BergenkommuneLogo" src="images\bergenLogo.png" class="bergenkommunenavbar" />
+        <div class="navbarButtons">
+          <div class="HomeButton">
+            <a href="forside.html" class="text_menyButton">
+              <div>Hjem</div>
+            </a>
+          </div>
+          <div class="ContactButton">
+            <span class="text_menyButton"><span>Kontakt</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progresscontainer styled in css/progress-container.css and script in js/progress-container.js -->
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active" data-title="Taushetsbelagte opplysninger" id="slide1">1</div>
+        <div class="circle" data-title="Deling av taushetsbelagte opplysninger" id="slide2">2</div>
+        <div class="circle" data-title="Deling av taushetsbelagte opplysninger 2" id="slide3">3</div>
+        <div class="circle" data-title="Samtykke" id="slide4">4</div>
+        <div class="circle" data-title="Anonymisering av taushetsbelagte opplysninger" id="slide5">5</div>
+        <div class="circle" data-title="Opplysningsrett" id="slide6">6</div>
+      </div>
+
+      <!-- Image container -->
+      <img alt="page5Image" src="images/page5.jpeg" class="picture" fetchpriority="high" />
+      <span class="caption">Kilde: "Studio Romantic - stock.adobe.com."</span>
+
+
+      <span class="text_overskrift">
+        <span>Samtykke</span>
+      </span>
+
+      <!-- Information box-->
+      <div class="slides-tematekst">
+        <p>
+          For at et samtykke skal frita fra taushetsplikten må samtykket
+          være gyldig og informert, det vil si at tjenestemottaker må
+          være klar over hva vedkommende samtykker til. Tjenestemottaker
+          må ha samtykke kompetanse og samtykket må gis frivillig.
+          <br>
+          <a href="https://www.helsedirektoratet.no/rundskriv/helsepersonelloven-med-kommentarer/taushetsplikt-og-opplysningsrett/-22.samtykke-til-a-gi-informasjon"
+            target="_blank">Helsepersonellloven §22</a>
+          <br><br>
+          Bestemmelsen regulerer hvilke krav som skal stilles til
+          samtykkets form. Det er i utgangspunktet ikke krav om
+          skriftlig samtykke. Det kan enten gis uttrykkelig, skriftlig
+          eller muntlig eller det kan gis stilltiende.
+          <br>
+          <a href="https://www.helsedirektoratet.no/rundskriv/pasient-og-brukerrettighetsloven-med-kommentarer/samtykke-til-helsehjelp/krav-til-samtykkets-form"
+            target="_blank">§ 4-2 Krav til samtykkets form</a>
+          <br><br>
+          Utgangspunktet er at det er den som er myndig og ikke har
+          mistet sin rettslige handleevne, som kan gi gyldig samtykke.
+          For barn under 18 år vil det imidlertid kreves samtykke fra
+          både vergen og barnet selv hvis barnet er gammelt nok til å
+          kunne forstå hva saken gjelder. Reglene om samtykke varierer
+          fra område til område.
+        </p>
+      </div>
+      
+      <!--Creates frame around the question-->
+      <div class="frame">
+        <!-- Question-->
+        <h1 class="question-header">
+          Hvilke av disse kravene må dekkes for at et samtykke skal frita
+          fra taushetsplikten?
+        </h1>
+        <div class="question-extra-text">
+          Tips: Du kan velge et eller flere svaralternativ.
+        </div>
+
+        <!-- Answer option -->
+        <form>
+          <input type="checkbox" id="item1">
+          <label for="item1"> Samtykket er gitt skriftlig.
+            <br></label><br>
+          <input type="checkbox" id="item2">
+          <label for="item2"> Samtykket er gyldig og informert.
+            <br></label><br>
+          <input type="checkbox" id="item3">
+          <label for="item3"> Samtykket må gis frivillig.
+            <br></label><br>
+          <input type="checkbox" id="item4">
+          <label for="item4"> For en person under 18 år er det kun foreldre/verge som kan gi samtykke.
+            <br></label><br>
+        </form>
+        <button class="sjekksvarButton" id="sjekksvar1" type="button">Sjekk svar</button>
+
+        <div id="responsMessage1" class="riHide"></div>
+      </div>
+
+      <!--Creates frame around the question-->
+      <div class="frame">
+        <!-- Question-->
+        <h1 class="question-header">
+          En må ha verbal tale og mulighet til å signere for å kunne
+          samtykke til deling av informasjon
+        </h1>
+
+        <body>
+          <!-- Answer option -->
+          <form>
+            <input type="radio" name="radioButton" id="item5">
+            <label for="item5"> Sant.
+              <br></label><br>
+            <input type="radio" name="radioButton" id="item6">
+            <label for="item6"> Usant.
+              <br></label><br>
+          </form>
+          <!-- Button to check answer -->
+          <button class="sjekksvarButton" id="sjekksvar2" type="button">Sjekk svar</button>
+
+          <!-- right or wrong answer message -->
+          <div id="responsMessage2" class="riHide"></div>
+        </body>
+      </div>
+
+    </div>
+
+    <!-- Buttons for next or previous page-->
+    <div class="buttonContainer">
+      <a href="slide3.html" class="temaogspm1-navlink1">
+
+        <button class="btn" id="prev">Forrige</button>
+      </a>
+      <a href="slide5.html" class="temaogspm1-navlink">
+        <button class="btn" id="next" disabled>Neste</button>
+      </a>
+    </div>
+  </div>
+  <script src="js/progress-container.js" defer></script>
+  <script src="js/slide4.js" defer></script>
+
+</body>
+
+</html>

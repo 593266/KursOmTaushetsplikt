@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forside</title>
+  <link rel="stylesheet" href="css/multiplechoice.css" type="text/css">
+  <link rel="stylesheet" href="css/progress-container.css" type="text/css">
+  <link href="css/slides.css" rel="stylesheet" type="text/css" />
+  <link href="css/button.css" rel="stylesheet" type="text/css" />
+  <link href="unused/feedback.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="main-container-ex-nextpagebuttons">
+
+      <div class="header">
+        <img alt="BergenkommuneLogo" src="images\bergenLogo.png" class="bergenkommunenavbar" />
+        <div class="navbarButtons">
+          <div class="HomeButton">
+            <a href="forside.html" class="text_menyButton">
+              <div>Hjem</div>
+            </a>
+          </div>
+
+          <!-- Creates a pop-up where the user can send feedback to admin/developers-->
+          <!-- Just an example, not fully implemented-->
+          <div class="ContactButton">
+            <div class="text_menyButton" onclick="openFeedbackPopup()">Kontakt</div>
+          </div>
+          <div id="feedbackPopup" class="popup">
+            <h3>Provide Feedback</h3>
+            <form action="send_feedback.php" method="post">
+              <label for="feedback">Your Feedback:</label>
+              <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+              <br>
+              <button type="submit">Send</button>
+              <button type="button" onclick="closeFeedbackPopup()">Cancel</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Makes the image clickable so that when clicked, the page is scrolled down-->
+      <a href="#scrollTarget" onclick="scrollToTarget()">
+        <img alt="page7Image" src="images/page1.jpeg" class="picture" fetchpriority="high" />
+      </a>
+      <span class="caption">Kilde: Aijiro - stock.adobe.com."</span>
+      <div id="scrollTarget"></div>
+
+      <!-- Main content of the page-->
+      <div class="text_overskrift">
+        <div>Om kurset</div>
+      </div>
+      <div class="text_forside">
+        <p>
+          Som ansatt i kommunehelsetjeneste har du taushetsplikt.
+          Dette kurset skal gi deg en forståelse om hva dette innebærer
+          og noen relevante eksempler rundt taushetsplikt som kan være utfordrende.
+          <br><br>
+          Kurset er satt opp slik at du vil få kort informasjon om et emne og en
+          relevant oppgave som må besvares korrekt for å kunne gå videre.
+          <br><br>
+          Formålet med kurset er å gi helsepersonell en kort introduksjon
+          over reglene som omfatter taushetsplikt, deling av
+          taushetsbelagte opplysninger, samtykke, anonymisering og
+          opplysningsrett.
+          <br><br>
+          Med helsepersonell menes i denne sammenheng personell i helse-
+          og omsorgstjenesten som yter bistand, samt elever og studenter som har praksis i
+          våre tjenester(Helsepersonell Helseregisterloven § 17).
+          <br><br>
+          Helsepersonell etter denne definisjonen omfatter eksempelvis
+          støttekontakter, avlastningshjem, ansatte i forvaltningen,
+          ansatte i botjenesten, og ansatte i dagsentertjenestene.
+          <br><br>
+          Kurset vil ikke gå i dybden på alt av taushetsplikt, men skal gi
+          en grunnleggende opplæring og gi trening i hvordan man ved
+          usikkerhet, skal finne ut av hva som kan deles eller ikke.
+          <br><br>
+          Kurset vil referere til lovtekst og ressurser som kan benyttes
+          for videre læring.
+        </p>
+      </div>
+
+      <!-- Button styled in button.css-->
+      <div class="button-wrapper">
+        <a href="slide1.html" class="button">
+          <span class="button-text">Start kurs</span>
+          <div class="fill-container"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="unused/feedback.js" defer></script>
+  <script src="js/forside.js" defer></script>
+
+
+</body>
+
+</html>

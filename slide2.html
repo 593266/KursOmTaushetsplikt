@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deling av taushetsbelagte opplysninger</title>
+  <link rel="stylesheet" href="css/multiplechoice.css" type="text/css">
+  <link rel="stylesheet" href="css/progress-container.css" type="text/css">
+  <link href="css/slides.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="main-container-ex-nextpagebuttons">
+
+      <!-- Everything related to the header of the site-->
+      <div class="header">
+        <img alt="BergenkommuneneLogo" src="images/bergenLogo.png" class="bergenkommunenavbar" />
+        <div class="navbarButtons">
+          <div class="HomeButton">
+            <a href="forside.html" class="text_menyButton">
+              <div>Hjem</div>
+            </a>
+          </div>
+          <div class="ContactButton">
+            <span class="text_menyButton"><span>Kontakt</span></span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Progresscontainer styled in css/progress-container.css and script in js/progress-container.js -->
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active" data-title="Taushetsbelagte opplysninger" id="slide1">1</div>
+        <div class="circle" data-title="Deling av taushetsbelagte opplysninger" id="slide2">2</div>
+        <div class="circle" data-title="Deling av taushetsbelagte opplysninger 2" id="slide3">3</div>
+        <div class="circle" data-title="Samtykke" id="slide4">4</div>
+        <div class="circle" data-title="Anonymisering av taushetsbelagte opplysninger" id="slide5">5</div>
+        <div class="circle" data-title="Opplysningsrett" id="slide6">6</div>
+      </div>
+
+      <!-- Image container -->
+      <img alt="page3Image" src="images/page3.jpeg" class="picture" fetchpriority="high" />
+      <span class="caption">Kilde: "Nenetus - stock.adobe.com."</span>
+
+
+      <span class="text_overskrift">
+        <span>Deling av taushetsbelagte opplysninger</span>
+      </span>
+
+      <!-- Information box-->
+      <div class="slides-tematekst">
+        <p>
+          Taushetsplikten gjelder også mellom helsepersonell. Utveksling
+          av taushetsbelagt informasjon mellom helsepersonell skal kun
+          skje når det er nødvendig for behandling og oppfølgning av
+          pasienten, jf. helsepersonelloven §§ 25 og 45, dersom
+          pasienten samtykker, eller hvor det foreligger annet rettslig
+          grunnlag for å gi slik informasjon.
+        </p>
+      </div>
+
+      <!--Creates frame around the question-->
+      <div class="frame">
+        <!-- Question-->
+        <h1 class="question-header">
+          Case:
+          <br>
+          Du jobber i en omsorgsbolig hvor en tjenestemottaker nettopp har
+          fått ny støttekontakt. Støttekontakten er ivrig i sitt arbeid,
+          og ønsker å vite hele historikken til tjenestemottaker, slik at
+          han er godt forberedt. Hva gjør du?
+        </h1>
+        <div class="question-extra-text">
+          Tips: Du kan velge et eller flere svaralternativ.
+        </div>
+
+        <!-- Answer option -->
+        <form>
+          <input type="checkbox" id="item1">
+          <label for="item1">
+            Du tenker all informasjon du har vil hjelpe støttekontakten
+            å gjøre en bedre jobb og deler alt du vet om
+            tjenestemottakeren.
+            <br></label><br>
+          <input type="checkbox" id="item2">
+          <label for="item2">Du henviser støttekontakten til pasientjournalen.
+            <br></label><br>
+          <input type="checkbox" id="item3">
+          <label for="item3">Du er usikker og velger å forespør en bekreftelse fra
+            tjenestemottakeren om at det er greit du deler det du vet
+            med støttekontakten.
+            <br></label><br>
+          <input type="checkbox" id="item4">
+          <label for="item4">Du forteller støttekontakten den informasjonen du betrakter som
+            nyttig for at han/hun skal kunne utføre jobben sin på en
+            måte som yter tjenestemottakeren best.
+            <br></label><br>
+        </form>
+
+        <!-- Button to check answer -->
+        <button class="sjekksvarButton" id="sjekksvar1" type="button">Sjekk svar</button>
+        <!-- right or wrong answer message -->
+        <div id="responsMessage1" class="riHide"></div>
+      </div>
+    </div>
+
+    <!-- Buttons for next or previous page-->
+    <div class="buttonContainer">
+      <a href="slide1.html" class="temaogspm1-navlink1">
+
+        <button class="btn" id="prev">Forrige</button>
+      </a>
+      <a href="slide3.html" class="temaogspm1-navlink">
+        <button class="btn" id="next" disabled>Neste</button>
+      </a>
+    </div>
+  </div>
+  <script src="js/progress-container.js" defer></script>
+  <script src="js/slide2.js" defer></script>
+
+</body>
+
+</html>

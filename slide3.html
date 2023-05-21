@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deling av taushetsbelagte opplysninger</title>
+  <link rel="stylesheet" href="css/multiplechoice.css" type="text/css">
+  <link rel="stylesheet" href="css/progress-container.css" type="text/css">
+  <link href="css/slides.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+  <div class="main-container">
+    <div class="main-container-ex-nextpagebuttons">
+
+      <!-- Everything related to the header of the site-->
+      <div class="header">
+        <img alt="BergenkommuneLogo" src="images\bergenLogo.png" class="bergenkommunenavbar" />
+        <div class="navbarButtons">
+          <div class="HomeButton">
+            <a href="forside.html" class="text_menyButton">
+              <div>Hjem</div>
+            </a>
+          </div>
+          <div class="ContactButton">
+            <span class="text_menyButton"><span>Kontakt</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progresscontainer styled in css/progress-container.css and script in js/progress-container.js -->
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active" data-title="Taushetsbelagte opplysninger" id="slide1">1</div>
+        <div class="circle" data-title="Deling av taushetsbelagte opplysninger" id="slide2">2</div>
+        <div class="circle" data-title="Deling av taushetsbelagte opplysninger 2" id="slide3">3</div>
+        <div class="circle" data-title="Samtykke" id="slide4">4</div>
+        <div class="circle" data-title="Anonymisering av taushetsbelagte opplysninger" id="slide5">5</div>
+        <div class="circle" data-title="Opplysningsrett" id="slide6">6</div>
+      </div>
+
+      <!-- Image container -->
+      <img alt="page4Image" src="images/page4.jpeg" class="picture" fetchpriority="high" />
+      <span class="caption">Kilde: "Syda Productions - stock.adobe.com."</span>
+
+      <span class="text_overskrift">
+        <span>Nærmeste pårørende og verge</span>
+      </span>
+
+      <!-- Information box-->
+      <div class="slides-tematekst">
+        <p>
+          Nærmeste pårørende og verge er viktige begreper knyttet til omsorg og representasjon for en tjenestemottaker.
+          Informasjon om hvem som er nærmeste pårørende og verge står oppført i pasientjournalen.
+          <br><br>
+          Nærmeste pårørende refererer til en eller flere personer som pasienten oppgir som sine pårørende og som har et
+          vedvarende og regelmessig forhold til pasienten. Hvis pasienten ikke kan oppgi pårørende og/eller verge,
+          vil nærmeste pårørende være den personen som har den mest varige og løpende kontakten med pasienten.
+          <br><br>
+          En verge, derimot, er en person som blir utpekt av en rett eller andre myndigheter til å representere en
+          tjenestemottaker i juridiske og praktiske saker. Dette skjer når personen selv ikke er i stand til å ivareta
+          sine egne
+          interesser på grunn av faktorer som alder, sykdom, funksjonshemming eller andre årsaker. Verge har myndighet
+          til å
+          ta beslutninger og handle på vegne av tjenestemottakeren for å sikre at deres interesser og velferd blir
+          ivaretatt.
+        </p>
+      </div>
+
+      <!--Creates frame around the question-->
+      <div class="frame">
+        <!-- Question-->
+        <h1 class="question-header">
+          Case:
+          <br>
+          I korridoren er det flere tjenestemottakere, ansatte og besøkende.
+          En tante av en tjenestemottaker ønsker informasjon om hennes nevø som er diagnotisert med kreft.
+          <br>
+          Hun er ikke nærmeste pårørende, men lurer på tjenestemottakerens form, om kreften har spredd seg og om kreften
+          er livstruende.
+          Tjenesteyteren gir kvinnen umiddelbart den informasjonen hun ber om, før de begge går inn for å snakke med
+          tjenestemottakeren.
+          <br><br>
+          Spørsmål:
+          <br>
+          Ble taushetsplikten brutt i denne situasjonen?
+        </h1>
+
+
+        <!-- Answer option -->
+        <form>
+          <input type="radio" id="item1" name="radioButton">
+          <label for="item1"> Ja, tanten er verken nærmeste pårørende eller verge og har derfor ikke rett til denne
+            informasjonen.
+            <br></label><br>
+          <input type="radio" id="item2" name="radioButton">
+          <label for="item2"> Nei, tanten er et direkte familiemedlem av tjenestemottakeren og har derfor rett til
+            denne informasjonen.
+            <br></label><br>
+        </form>
+        <!-- Button to check answer -->
+        <button class="sjekksvarButton" id="sjekksvar1" type="button">Sjekk svar</button>
+        <!-- right or wrong answer message -->
+
+        <div id="responsMessage1" class="riHide"></div>
+      </div>
+
+
+
+
+      <span class="text_overskrift">
+        <span>Deling av taushetsbelagte opplysninger</span>
+      </span>
+      <div class="slides-tematekst">
+        <p>
+          § 21. Hovedregel om taushetsplikt - Helsedirektoratet
+          <br>
+          Helsepersonell skal "hindre" at andre får kjennskap eller
+          tilgang til taushetsbelagte opplysninger. Dette innebærer ikke
+          bare en passiv plikt for helsepersonellet til å tie, men også
+          en aktiv plikt til å hindre uvedkommende i å få tilgang til
+          taushetsbelagt informasjon.
+        </p>
+      </div>
+
+      <div class="frame">
+        <h1 class="question-header">
+          Spørsmål:
+          <br>
+          Gitt at personen er nærmeste pårørende / verge. Hvor skal samtalen foregå?
+
+        </h1>
+
+        <form>
+          <input type="radio" id="item3" name="radioButton">
+          <label for="item3"> Samtalen kan foregå hvor som helst.
+            <br></label><br>
+          <input type="radio" id="item4" name="radioButton">
+          <label for="item4"> Samtalen innebærer taushetsbelagt informasjon og skal derfor tas
+            på et sted hvor ingen uvedkommende kan høre samtalen.
+            <br></label><br>
+        </form>
+        <button class="sjekksvarButton" id="sjekksvar2" type="button">Sjekk svar</button>
+
+        <div id="responsMessage2" class="riHide"></div>
+      </div>
+
+      <div class="frame">
+        <h1 class="question-header">
+          Spørsmål:
+          <br>
+          Hva bør man gjøre hvis en person etterspør slik taushetsbelagt informasjon?
+        </h1>
+
+        <body>
+          <form>
+            <input type="radio" id="item5" name="radioButton">
+            <label for="item5"> Spørre personen om de er nærmeste pårørende / verge.
+              <br></label><br>
+            <input type="radio" id="item6" name="radioButton">
+            <label for="item6"> Undersøke i pasientjournalen hvem som er nærmeste pårørende / verge,
+              og bekrefte om gitt person er en av de ved hjelp av legitimasjon.
+              <br></label><br>
+          </form>
+          <button class="sjekksvarButton" id="sjekksvar3" type="button">Sjekk svar</button>
+
+          <div id="responsMessage3" class="riHide"></div>
+        </body>
+      </div>
+
+    </div>
+
+    <!-- Buttons for next or previous page-->
+    <div class="buttonContainer">
+      <a href="slide2.html" class="temaogspm1-navlink1">
+
+        <button class="btn" id="prev">Forrige</button>
+      </a>
+      <a href="slide4.html" class="temaogspm1-navlink">
+        <button class="btn" id="next" disabled>Neste</button>
+      </a>
+    </div>
+  </div>
+  <script src="js/progress-container.js" defer></script>
+  <script src="js/slide3.js" defer></script>
+
+</body>
+
+</html>

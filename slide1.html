@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taushetsbelagte opplysninger</title>
+  <link rel="stylesheet" href="css/multiplechoice.css" type="text/css">
+  <link rel="stylesheet" href="css/progress-container.css" type="text/css">
+  <link href="css/slides.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="main-container-ex-nextpagebuttons">
+
+      <!-- Everything related to the header of the site-->
+      <div class="header">
+        <img alt="BergenkommuneLogo" src="images\bergenLogo.png" class="bergenkommunenavbar" />
+        <div class="navbarButtons">
+          <div class="HomeButton">
+            <a href="forside.html" class="text_menyButton">
+              <div>Hjem</div>
+            </a>
+          </div>
+          <div class="ContactButton">
+            <span class="text_menyButton"><span>Kontakt</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progresscontainer styled in css/progress-container.css and script in js/progress-container.js -->
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active" data-title="Taushetsbelagte opplysninger" id="slide1">1</div>
+        <div class="circle" data-title="Deling av taushetsbelagte opplysninger" id="slide2">2</div>
+        <div class="circle" data-title="Deling av taushetsbelagte opplysninger 2" id="slide3">3</div>
+        <div class="circle" data-title="Samtykke" id="slide4">4</div>
+        <div class="circle" data-title="Anonymisering av taushetsbelagte opplysninger" id="slide5">5</div>
+        <div class="circle" data-title="Opplysningsrett" id="slide6">6</div>
+      </div>
+
+      <!-- Image container -->
+      <img alt="page2Image" src="images/page2.jpeg" class="picture" />
+      <span class="caption">Kilde: "Javdat - stock.adobe.com."</span>
+
+
+      <span class="text_overskrift">
+        <span>Taushetsbelagte opplysninger</span>
+      </span>
+      <!-- Information box-->
+      <div class="slides-tematekst">
+        <p>
+          Taushetsbelagt informasjon består av både helserelaterte
+          opplysninger og opplysninger om andre personlige forhold.
+          Helserelaterte opplysninger kan blant annet være diagnose,
+          sykehistorie, legebesøk, medisinske opplysninger og
+          tiltaksplaner.
+          <br>
+          <br>
+          Opplysninger om andre personlige forhold kan blant annet være
+          sosiale forhold, sivilstand, økonomiske forhold og mer.
+          Personopplysninger er også taushetsbelagt dersom det kan brukes
+          til å identifisere en person. Dette gjelder blant annet navn,
+          fødselsdato, adresse, personnummer, statsborgerskap, yrke,
+          bosted og arbeidssted.
+        </p>
+      </div>
+
+      <!--Creates frame around the question-->
+      <div class="frame">
+        <!-- Question-->
+        <h1 class="question-header">
+          Hvilke av disse alternativene vil betraktes som taushetsbelagt?
+        </h1>
+        <div class="question-extra-text">
+          Tips: Du kan velge et eller flere svaralternativ.
+        </div>
+
+        <!-- Answer option -->
+        <form id="form1">
+          <input type="checkbox" id="item1">
+          <label for="item1"> Adressen til en spesifikk person som bor i omsorgsbolig.
+            <br></label><br>
+          <input type="checkbox" id="item2">
+          <label for="item2"> Hvilke medisiner en spesifikk person bruker.
+            <br></label><br>
+          <input type="checkbox" id="item3">
+          <label for="item3"> En spesifikk person sin diagnose.
+            <br></label><br>
+          <input type="checkbox" id="item4">
+          <label for="item4"> En diagnose som en person selv har delt på sosiale medier.
+            <br></label><br>
+        </form>
+        <!-- Button to check answer -->
+        <button class="sjekksvarButton" id="sjekksvar">
+          Sjekk svar
+        </button>
+        <!-- right or wrong answer message -->
+        <div id="responsMessage1" class="riHide"></div>
+      </div>
+    </div>
+
+    <!-- Buttons for next or previous page-->
+    <div class="buttonContainer">
+      <a href="forside.html" class="temaogspm1-navlink1">
+
+        <button class="btn" id="prev">Forrige</button>
+      </a>
+      <a href="slide2.html" class="temaogspm1-navlink">
+        <button class="btn" id="next" disabled>Neste</button>
+      </a>
+    </div>
+  </div>
+
+  <script src="js/progress-container.js" defer></script>
+  <script src="js/slide1.js" defer></script>
+  <script src="js/feedback.js" defer></script>
+
+
+</body>
+
+</html>

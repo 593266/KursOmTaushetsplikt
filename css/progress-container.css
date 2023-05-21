@@ -1,0 +1,127 @@
+:root {
+  --line-border-fill: rgba(252, 200, 34, 1);
+  --line-border-empty: #e0e0e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #f6f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: auto;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+
+.progress-container::before {
+  content: "";
+  /* Mandatory with ::before */
+  background-color: var(--line-border-empty);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--line-border-empty);
+  transition: 0.4s ease;
+  position: relative;
+}
+
+.circle.active {
+  border-color: var(--line-border-fill);
+}
+
+.circle:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  top: -130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 3px;
+  z-index: 1;
+  width: max-content;
+}
+
+.circle:hover::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 100%;
+  transform: translateX(-50%) rotate(45deg);
+  border-top: 5px solid rgba(0, 0, 0, 0.8);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  z-index: 2;
+}
+
+.btn {
+  background-color: var(--line-border-fill);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+  bottom: 2%;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
+}

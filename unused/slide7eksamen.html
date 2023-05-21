@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksamen</title>
+    <link rel="stylesheet" href="css/multiplechoice.css" type="text/css">
+    <link rel="stylesheet" href="css/progress-container.css" type="text/css">
+    <link href="css/slides.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="main-container-ex-nextpagebuttons">
+
+            <div class="header">
+                <img alt="BergenkommuneLogo" src="images\bergenLogo.png" class="bergenkommunenavbar" />
+                <div class="navbarButtons">
+                    <div class="HomeButton">
+                        <a href="forside.html" class="text_menyButton">
+                            <div>Hjem</div>
+                        </a>
+                    </div>
+                    <div class="AboutButton">
+                        <span class="text_menyButton"><span>Om kurset</span></span>
+                    </div>
+                    <div class="ContactButton">
+                        <span class="text_menyButton"><span>Kontakt</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="circle active" data-title="Taushetsbelagte opplysninger" id="slide1">1</div>
+                <div class="circle" data-title="Deling av taushetsbelagte opplysninger" id="slide2">2</div>
+                <div class="circle" data-title="Deling av taushetsbelagte opplysninger 2" id="slide3">3</div>
+                <div class="circle" data-title="Samtykke" id="slide4">4</div>
+                <div class="circle" data-title="Anonymisering av taushetsbelagte opplysninger" id="slide5">5</div>
+                <div class="circle" data-title="Opplysningsrett" id="slide6">6</div>
+                <div class="circle" data-title="Eksamen" id="slide7">7</div>
+            </div>
+
+            <h1 class="eksamen-title"> Eksamen </h1>
+
+            <!--lager padding og ramme rundt spørsmålene-->
+            <div class="frame">
+                <!-- Overskrift eller spm -->
+                <h2 class="question-header">
+                    Spørsmål ? "alternativ"
+                </h2>
+                <!-- Svar alternativ alternativ -->
+                <form class="test-1">
+                    <input type="checkbox" id="item1">
+                    <label for="item1"> Alternativ 1.
+                        <br></label><br>
+                    <input type="checkbox" id="item2">
+                    <label for="item2"> Alternativ 2.
+                        <br></label><br>
+                    <input type="checkbox" id="item3">
+                    <label for="item3"> Alternativ 3.
+                        <br></label><br>
+                    <input type="checkbox" id="item4">
+                    <label for="item4"> Alternativ 4.
+                        <br></label><br>
+                </form>
+                <!-- Knapp for å sjekke svar -->
+                <!-- <button id="sjekksvar">
+                        Sjekk svar
+                    </button> -->
+                <!-- Riktig svar melding og feil svar melding -->
+                <div id="responsMessage" class="riHide"></div>
+            </div>
+
+            <!-- multiple choice test 2 -->
+
+            <!--lager padding og ramme rundt spørsmålene-->
+            <div class="frame">
+                <!-- Overskrift eller spm -->
+                <h2 class="question-header">
+                    Spørsmål ? "alternativ"
+                </h2>
+                <!-- Svar alternativ alternativ -->
+                <form class="test-2">
+                    <input type="checkbox" id="item5">
+                    <label for="item5"> Alternativ 1.
+                        <br></label><br>
+                    <input type="checkbox" id="item6">
+                    <label for="item6"> Alternativ 2.
+                        <br></label><br>
+                    <input type="checkbox" id="item7">
+                    <label for="item7"> Alternativ 3.
+                        <br></label><br>
+                    <input type="checkbox" id="item8">
+                    <label for="item8"> Alternativ 4.
+                        <br></label><br>
+                </form>
+                <!-- Knapp for å sjekke svar -->
+                <!--  <button id="sjekksvar2">
+                        Sjekk svar
+                    </button> -->
+                <!-- Riktig svar melding og feil svar melding -->
+                <div id="responsMessage2" class="riHide"></div>
+            </div>
+
+            <!-- multiple choice test 3 -->
+
+            <!--lager padding og ramme rundt spørsmålene-->
+            <div class="frame">
+                <!-- Overskrift eller spm -->
+                <h2 class="question-header">
+                    Spørsmål ? "alternativ"
+                </h2>
+                <!-- Svar alternativ alternativ -->
+                <form class="test-3">
+                    <input type="checkbox" id="item9">
+                    <label for="item9"> Alternativ 1.
+                        <br></label><br>
+                    <input type="checkbox" id="item10">
+                    <label for="item10"> Alternativ 2.
+                        <br></label><br>
+                    <input type="checkbox" id="item11">
+                    <label for="item11"> Alternativ 3.
+                        <br></label><br>
+                    <input type="checkbox" id="item12">
+                    <label for="item12"> Alternativ 4.
+                        <br></label><br>
+                </form>
+                <!-- Knapp for å sjekke svar -->
+                <!-- <button id="sjekksvar3">
+                        Sjekk svar
+                    </button> -->
+                <!-- Riktig svar melding og feil svar melding -->
+                <div id="responsMessage3" class="riHide"></div>
+            </div>
+
+            <!-- multiple choice test 4 -->
+
+            <!--lager padding og ramme rundt spørsmålene-->
+            <div class="frame">
+                <!-- Overskrift eller spm -->
+                <h2 class="question-header">
+                    Spørsmål ? "alternativ"
+                </h2>
+                <!-- Svar alternativ alternativ -->
+                <form class="test-4">
+                    <input type="checkbox" id="item13">
+                    <label for="item13"> Alternativ 1.
+                        <br></label><br>
+                    <input type="checkbox" id="item14">
+                    <label for="item14"> Alternativ 2.
+                        <br></label><br>
+                    <input type="checkbox" id="item15">
+                    <label for="item15"> Alternativ 3.
+                        <br></label><br>
+                    <input type="checkbox" id="item16">
+                    <label for="item16"> Alternativ 4.
+                        <br></label><br>
+                </form>
+                <!-- Knapp for å sjekke svar -->
+                <!-- <button id="sjekksvar4">
+                        Sjekk svar
+                    </button> -->
+                <!-- Riktig svar melding og feil svar melding -->
+                <div id="responsMessage4" class="riHide"></div>
+            </div>
+
+            <!-- multiple choice test 5 -->
+
+            <!--lager padding og ramme rundt spørsmålene-->
+            <div class="frame">
+                <!-- Overskrift eller spm -->
+                <h2 class="question-header">
+                    Spørsmål ? "alternativ"
+                </h2>
+                <!-- Svar alternativ alternativ -->
+                <form class="test-5">
+                    <input type="checkbox" id="item17">
+                    <label for="item17"> Alternativ 1.
+                        <br></label><br>
+                    <input type="checkbox" id="item18">
+                    <label for="item18"> Alternativ 2.
+                        <br></label><br>
+                    <input type="checkbox" id="item19">
+                    <label for="item19"> Alternativ 3.
+                        <br></label><br>
+                    <input type="checkbox" id="item20">
+                    <label for="item20"> Alternativ 4.
+                        <br></label><br>
+                </form>
+                <!-- Knapp for å sjekke svar -->
+                <!--  <button id="sjekksvar5">
+                        Sjekk svar
+                    </button> -->
+                <!-- Riktig svar melding og feil svar melding -->
+                <div id="responsMessage5" class="riHide"></div>
+            </div>
+
+            <!-- multiple choice test 6 -->
+
+            <!--lager padding og ramme rundt spørsmålene-->
+            <div class="frame">
+                <!-- Overskrift eller spm -->
+                <h2 class="question-header">
+                    Spørsmål ? "alternativ"
+                </h2>
+                <!-- Svar alternativ alternativ -->
+                <form class="test-6">
+                    <input type="checkbox" id="item21">
+                    <label for="item21"> Alternativ 1.
+                        <br></label><br>
+                    <input type="checkbox" id="item22">
+                    <label for="item22"> Alternativ 2.
+                        <br></label><br>
+                    <input type="checkbox" id="item23">
+                    <label for="item23"> Alternativ 3.
+                        <br></label><br>
+                    <input type="checkbox" id="item24">
+                    <label for="item24"> Alternativ 4.
+                        <br></label><br>
+                </form>
+                <!-- Knapp for å sjekke svar -->
+                <button id="sjekksvar6">
+                    Sjekk svar
+                </button>
+                <!-- Riktig svar melding og feil svar melding -->
+                <div id="responsMessage6" class="riHide"></div>
+
+                <button class="btn" id="endcourseBtn" style="display: none;">
+                    Avslutt krus
+                </button>
+            </div>
+        </div>
+
+        <!-- Måtte ha med next og prev buttons for at progressbaren skal funke korrekt. De er satt som usynlige -->
+
+        <div class="buttonContainer">
+            <a href="slide5.html" class="temaogspm1-navlink1">
+                <button class="btn" id="prev" style="visibility: hidden;">Forrige</button>
+            </a>
+            <a href="eksamen.html" class="temaogspm1-navlink">
+                <button class="btn" id="next" style="visibility: hidden;" disabled>Neste</button>
+            </a>
+        </div>
+        
+    </div>
+
+    <script src="eric/eksamen1.js" defer></script>
+    <script src="js/progress-container.js" defer></script>
+</body>
+
+</html>

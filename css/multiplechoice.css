@@ -1,0 +1,89 @@
+/* skjuler svaralternativene */
+.riHide {
+    display: none;
+  }
+  
+  /* Designet på melding ved riktigsvar og feilsvar */
+  .ri-alert-success,
+  .ri-alert-danger,
+  .ri-alert-partially {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    display: inline-block;
+  }
+  
+  .ri-alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  .ri-alert-danger {
+    color: #ce4f4f;
+    background-color: #edd4d4;
+    border-color: #edd4d4;
+  }
+
+  .ri-alert-partially {
+    color: #fcc822;
+    background-color: #ecedd4;
+    border-color: #ecedd4;
+  }
+  
+  
+  /* Hover effekt på svar alternativene checkbox og radioButtons */
+  input[type="checkbox"]:hover + label,
+  input[type="radio"]:hover + label {
+    background-color: #91c2ed;
+    border-radius: 5px;
+    border: 1px solid #91c2ed;
+  }
+  
+  /* sjekk svar knapp */
+  .sjekksvarButton {
+    margin-top: 5px;
+    background-color: #fcc822;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  /* bakgrunnsfarge på hele siden */
+  
+  /* rammen rundt spørsmålene */
+  .frame {
+    position: relative;
+    margin: 100px 10px 10px 10px;
+    background-color: #cdcdcd;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    width: 800px;
+    padding-bottom: 3%;
+  }
+  /* add space between multiple choice and next textbox */
+  .frame + * {
+    margin-top: 100px;
+  }
+  
+  
+  /* farge til spørsmål overskrift */
+  .question-header {
+    color: #3d78aa;
+    font-size: 20px;
+  }
+
+  /* skrift under spørsmål for å tydeligjør at flere svaralternativ kan velges*/
+  .question-extra-text {
+    color: #000000;
+    font-size: 16px;
+    padding-bottom: 4%;
+  }
+  

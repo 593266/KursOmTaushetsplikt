@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opplysningsrett</title>
+  <link rel="stylesheet" href="css/multiplechoice.css" type="text/css">
+  <link rel="stylesheet" href="css/progress-container.css" type="text/css">
+  <link href="css/slides.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="main-container">
+    <div class="main-container-ex-nextpagebuttons">
+
+      <!-- Everything related to the header of the site-->
+      <div class="header">
+        <img alt="BergenkommuneLogo" src="images\bergenLogo.png" class="bergenkommunenavbar" />
+        <div class="navbarButtons">
+          <div class="HomeButton">
+            <a href="forside.html" class="text_menyButton">
+              <div>Hjem</div>
+            </a>
+          </div>
+          <div class="ContactButton">
+            <span class="text_menyButton"><span>Kontakt</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progresscontainer styled in css/progress-container.css and script in js/progress-container.js -->
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active" data-title="Taushetsbelagte opplysninger" id="slide1">1</div>
+        <div class="circle" data-title="Deling av taushetsbelagte opplysninger" id="slide2">2</div>
+        <div class="circle" data-title="Deling av taushetsbelagte opplysninger 2" id="slide3">3</div>
+        <div class="circle" data-title="Samtykke" id="slide4">4</div>
+        <div class="circle" data-title="Anonymisering av taushetsbelagte opplysninger" id="slide5">5</div>
+        <div class="circle" data-title="Opplysningsrett" id="slide6">6</div>
+      </div>
+
+      <!-- Image container -->
+      <img alt="page7Image" src="images/page7.jpeg" class="picture" fetchpriority="high" />
+      <span class="caption">Kilde: "C Malambo - stock.adobe.com."</span>
+
+
+      <span class="text_overskrift">
+        <span>Opplysningsrett</span>
+      </span>
+
+      <!-- Information box-->
+      <div class="slides-tematekst">
+        <p>
+          Opplysninger til samarbeidende personell, helsepersonelloven,
+          § 25
+          <br>
+          Retten til å gi opplysninger til samarbeidende personell er en
+          del av opplysningsretten. Opplysninger om pasienten kan gis
+          andre enn medhjelpere. Du må vurdere om kommunikasjonen tjener
+          pasientbehandlingen. Informasjon som gis til samarbeidende
+          personell må være nødvendig for å kunne gi forsvarlig
+          behandling til pasienten.
+          <br>
+          Pasienten skal i utgangspunktet informeres om at opplysninger
+          gis. Dette er særlig viktig, hvis det kan være tvil om
+          pasienten vil komme til å samtykke.
+          <br>
+          Hvis pasienten ikke samtykker, skal opplysningene ikke gis til
+          samarbeidende personell.
+        </p>
+      </div>
+
+      <!--Creates frame around the question-->
+      <div class="frame">
+        <!-- Question-->
+        <h1 class="question-header">
+          Hva menes med opplysningsrett?
+        </h1>
+        <div class="question-extra-text">
+          Tips: Du kan velge et eller flere svaralternativ.
+        </div>
+
+        <form>
+          <input type="checkbox" id="item1">
+          <label for="item1"> Opplysningsrett refererer til retten til å dele sensitiv informasjon offentlig uten
+            samtykke.
+            <br></label><br>
+          <input type="checkbox" id="item2">
+          <label for="item2"> At alle har rett til å få opplysninger om sin egen
+            helsetilstand.
+            <br></label><br>
+          <input type="checkbox" id="item3">
+          <label for="item3"> At du som helsepersonell i noen situasjoner har rett til å
+            fravike taushetsplikten.
+            <br></label><br>
+          <input type="checkbox" id="item4">
+          <label for="item4"> Opplysningsrett refererer til en persons rett til å få tilgang til andres personlige
+            opplysninger uten noen begrensninger.
+            <br></label><br>
+        </form>
+        <button class="sjekksvarButton" id="sjekksvar1" type="button">Sjekk svar</button>
+
+        <div id="responsMessage1" class="riHide"></div>
+      </div>
+
+
+      <!--Creates frame around the question-->
+      <div class="frame">
+        <!-- Question-->
+        <h1 class="question-header">
+          Case:
+          En tjenestemottaker med autisme har hatt et uhell og slår hodet og må bli hentet av ambulanse.
+          Du vet tjenestemottakeren er ukomfortabel med fysisk kontakt. Vil det være et brudd på taushetsplikten å dele
+          dette med ambulansepersonellet?
+        </h1>
+
+        <!-- Answer option -->
+        <form>
+          <input type="radio" name="radioButton" id="item5">
+          <label for="item5"> Ja.
+            <br></label><br>
+          <input type="radio" name="radioButton" id="item6">
+          <label for="item6"> Nei.
+            <br></label><br>
+        </form>
+
+        <!-- Button to check answer -->
+        <button class="sjekksvarButton" id="sjekksvar2" type="button">Sjekk svar</button>
+
+        <!-- right or wrong answer message -->
+        <div id="responsMessage2" class="riHide"></div>
+      </div>
+    </div>
+
+    <!-- Buttons for next or previous page-->
+    <div class="buttonContainer">
+      <a href="slide5.html" class="temaogspm1-navlink1">
+
+        <button class="btn" id="prev">Forrige</button>
+      </a>
+      <a href="kursbevis.html" class="temaogspm1-navlink">
+        <button class="btn" id="next" disabled>Fullfør kurs</button>
+      </a>
+    </div>
+  </div>
+  <script src="js/progress-container.js" defer></script>
+  <script src="js/slide6.js" defer></script>
+</body>
+
+</html>

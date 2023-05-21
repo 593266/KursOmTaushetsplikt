@@ -1,0 +1,191 @@
+
+
+.main-container {
+  min-height: 100vh;
+  width:100%;
+  padding: 0;
+  padding-bottom: 5%;
+  background-color: #f5f5f5;
+
+}
+
+.main-container-ex-nextpagebuttons {
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+
+.header {
+  width:100%;
+  margin: 0px;
+  padding: 0;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 43px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #999;
+}
+
+.bergenkommunenavbar {
+  width: 20%;
+  height: auto;
+  opacity: 0.90;
+  border-color: rgba(245, 245, 245, 1);
+  border-style: solid;
+  border-width: 0px;
+  margin-left: 10%;
+}
+
+.navbarButtons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+.HomeButton {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.HomeButton:hover {
+
+  background-color: #f7f7f7;
+  /* Change the background color when hovering */
+  box-shadow: 0px 0px 6px #888;
+  /* Add a shadow effect when hovering */
+}
+
+
+.text_menyButton {
+  color: #515151;
+  font-size: 27.86731719970703px;
+  text-align: left;
+  margin: 0;
+  text-decoration: none;
+}
+
+.ContactButton {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Adds a smooth transition effect */
+}
+
+.ContactButton:hover {
+  background-color: #f7f7f7;
+  /* Change the background color when hovering */
+  box-shadow: 0px 0px 5px #888;
+  /* Add a shadow effect when hovering */
+}
+
+
+
+
+
+.picture {
+  width: 679px;
+  height: 493px;
+  position: relative;
+}
+
+.caption {
+	text-align:center;
+	font-family: cursive;
+	margin-bottom: 36px;
+}
+
+
+.text_overskrift {
+  color: rgba(0, 0, 0, 1);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Verdana;
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+
+.slides-tematekst {
+  max-height: max-content;
+  max-width: max-content;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgba(243, 221, 164, 1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.slides-tematekst p {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.temaogspm1-navlink,
+.temaogspm1-navlink1 {
+  display: contents;
+}
+
+.text_forside {
+  color: rgb(0, 0, 0);
+  width: 1000px;
+  height: auto;
+  font-size: 23px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Verdana;
+  font-weight: 400;
+  line-height: 104%;
+  font-stretch: normal;
+  text-decoration: none;
+  background-color: rgba(243, 221, 164, 1);
+  border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 50px;
+
+}
+
+.text_kursbevis {
+  max-height: max-content;
+  max-width: max-content;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Change from "flex-start" to "center" */
+  align-items: center; /* Add this line */
+  background-color: rgba(243, 221, 164, 1);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.text_kursbevis p {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center; /* Add this line */
+}
