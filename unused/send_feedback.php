@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $feedback = $_POST["feedback"];
-  $to = "jonasabach@gmail.com"; // Replace with your desired email address
+  $to = "YOUREMAIL"; // Replace with your desired email address
   $subject = "Feedback from Contact Form";
   $headers = "From: webmaster@example.com"; // Replace with your website's email or set to the user's input
 
